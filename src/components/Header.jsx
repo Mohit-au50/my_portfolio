@@ -5,7 +5,7 @@ import MobileNav from "./MobileNav";
 
 const Header = () => {
   return (
-    <header className="w-full h-[5rem] lg:h-[7rem] fixed px-9 lg:px-24 flex items-center bg-rose-400">
+    <header className="w-full h-[5rem] lg:h-[7rem] fixed px-9 lg:px-24 flex items-center">
       <div className="w-full flex lg:flex-row lg:items-center justify-between">
         {/* logo image */}
         <Link to="/">
