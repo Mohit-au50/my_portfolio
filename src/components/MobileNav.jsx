@@ -26,7 +26,7 @@ const MobileNav = () => {
       </div>
 
       {/* menu */}
-      <motion.dev
+      <motion.div
         variants={menuAnimation}
         initial="hidden"
         animate={openMenu ? "show" : ""}
@@ -60,7 +60,7 @@ const MobileNav = () => {
             </Link>
           </li>
         </ul>
-      </motion.dev>
+      </motion.div>
     </nav>
   );
 };
