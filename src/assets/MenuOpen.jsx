@@ -1,5 +1,5 @@
 import React from "react";
-const SvgComponent = (props) => (
+const MenuOpen = () => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     fill="none"
@@ -15,4 +15,4 @@ const SvgComponent = (props) => (
     />
   </svg>
 );
-export default SvgComponent;
+export default MenuOpen;
