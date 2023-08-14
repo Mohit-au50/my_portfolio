@@ -22,26 +22,26 @@ const Home = () => {
   return (
     <section className="section bg-gray-100">
       <div className="relative h-full container mx-auto">
-        <div className="flex flex-col pt-[6rem]">
+        <div className="flex flex-col pt-[6rem] lg:pt-32">
           {/* blob and text */}
-          <div className="flex flex-col w-full items-center">
+          <div className="flex flex-col w-full lg:flex-row lg:justify-between items-center lg:px-32">
             {/* blob shape with image */}
-            <div className="flex mb-2">
-              <div className="relative overflow-hidden w-48 h-48 bg-gradient-to-tr from-orange-400 to-green-400 rounded-blob animate-morph">
+            <div className="flex mb-2 lg:order-2 ">
+              <div className="relative overflow-hidden w-48 h-48 lg:w-72 lg:h-72 bg-gradient-to-tr from-orange-400 to-green-400 rounded-blob animate-morph">
                 <img
                   src={profile}
                   alt=""
-                  className="absolute top-20 -left-3 scale-[1.75]"
+                  className="absolute top-20 -left-3 lg:top-28 lg:-left-5 scale-[1.75]"
                 />
               </div>
             </div>
 
             {/* text */}
-            <div className="flex flex-col items-center">
-              <h1 className="text-4xl font-bold my-5 text-center">
+            <div className="flex flex-col items-center lg:items-start">
+              <h1 className="text-4xl lg:text-5xl font-bold my-5 lg:my-7 text-center">
                 Full-Stack Developer
               </h1>
-              <p className="text-lg text-gray-500">
+              <p className="text-lg lg:text-xl text-gray-500">
                 Hi, I'm Mohit, A passionate Full-stack <br /> Developer based in
                 Delhi, India.
                 <svg
@@ -58,12 +58,12 @@ const Home = () => {
                   />
                 </svg>
               </p>
-              <button className="bg-black text-white px-7 py-2 rounded my-5">
+              <button className="bg-black text-white px-7 py-2 rounded my-5 lg:my-7">
                 Download CV
               </button>
 
               {/* social icons */}
-              <div className="flex gap-x-2 mb-3">
+              <div className="flex gap-x-2 lg:gap-x-4 mb-3 lg:mb-5">
                 <Link to="https://www.linkedin.in/">
                   <img src={linkedin} alt="" className="w-9 h-9" />
                 </Link>
@@ -76,97 +76,97 @@ const Home = () => {
           </div>
 
           {/* tech icons */}
-          <div className="flex flex-col items-center flex-wrap">
-            <h1 className="font-bold text-xl my-5 border-b pb-2 border-gray-500">
+          <div className="flex flex-col lg:flex-row items-center lg:items-start lg:mt-7 lg:gap-x-5 lg:px-32">
+            <h1 className="w-36 font-bold text-xl lg:mt-8 my-5 border-b lg:border-b-0 lg:border-r pb-2 lg:pb-0 border-gray-500">
               Tech Stack
             </h1>
 
-            <div className="slider w-full h-[5rem] relative grid place-items-center overflow-hidden">
-              <div className="slide-track animate-scroll flex gap-x-5 whitespace-nowrap">
-                <div className="w-14 h-14 hover:scale-90 rounded-full bg-white grid place-items-center shadow-xl perspective">
+            <div className="w-full h-[5rem] lg:h-auto lg:py-5 lg:w-[37rem] lg:px-9 relative grid place-items-center overflow-hidden">
+              <div className="animate-scroll lg:animate-none flex gap-x-5 whitespace-nowrap lg:flex-wrap lg:gap-y-7">
+                <div className=" w-14 h-14 rounded-full bg-white grid place-items-center shadow-lg perspective">
                   <img src={html5} alt="" className="w-9 h-9" />
                 </div>
-                <div className="w-14 h-14 rounded-full bg-white grid place-items-center shadow-xl perspective">
+                <div className=" w-14 h-14 rounded-full bg-white grid place-items-center shadow-lg perspective">
                   <img src={css} alt="" className="w-9 h-9" />
                 </div>
-                <div className="w-14 h-14 rounded-full bg-white grid place-items-center shadow-xl perspective">
+                <div className=" w-14 h-14 rounded-full bg-white grid place-items-center shadow-lg perspective">
                   <img src={javascript} alt="" className="w-9 h-9" />
                 </div>
-                <div className="w-14 h-14 rounded-full bg-white grid place-items-center shadow-xl perspective">
+                <div className=" w-14 h-14 rounded-full bg-white grid place-items-center shadow-lg perspective">
                   <img src={scss} alt="" className="w-9 h-9" />
                 </div>
-                <div className="w-14 h-14 rounded-full bg-white grid place-items-center shadow-xl perspective">
+                <div className=" w-14 h-14 rounded-full bg-white grid place-items-center shadow-lg perspective">
                   <img src={tailwind} alt="" className="w-9 h-9" />
                 </div>
-                <div className="w-14 h-14 rounded-full bg-white grid place-items-center shadow-xl perspective">
+                <div className=" w-14 h-14 rounded-full bg-white grid place-items-center shadow-lg perspective">
                   <img src={git} alt="" className="w-9 h-9" />
                 </div>
-                <div className="w-14 h-14 rounded-full bg-white grid place-items-center shadow-xl perspective">
+                <div className=" w-14 h-14 rounded-full bg-white grid place-items-center shadow-lg perspective">
                   <img src={mongodb} alt="" className="w-9 h-9" />
                 </div>
-                <div className="w-14 h-14 rounded-full bg-white grid place-items-center shadow-xl perspective">
+                <div className=" w-14 h-14 rounded-full bg-white grid place-items-center shadow-lg perspective">
                   <img src={express} alt="" className="w-9 h-9" />
                 </div>
-                <div className="w-14 h-14 rounded-full bg-white grid place-items-center shadow-xl perspective">
+                <div className=" w-14 h-14 rounded-full bg-white grid place-items-center shadow-lg perspective">
                   <img src={nodejs} alt="" className="w-9 h-9" />
                 </div>
-                <div className="w-14 h-14 rounded-full bg-white grid place-items-center shadow-xl perspective">
+                <div className=" w-14 h-14 rounded-full bg-white grid place-items-center shadow-lg perspective">
                   <img src={react} alt="" className="w-9 h-9" />
                 </div>
-                <div className="w-14 h-14 rounded-full bg-white grid place-items-center shadow-xl perspective">
+                <div className=" w-14 h-14 rounded-full bg-white grid place-items-center shadow-lg perspective">
                   <img src={reactrouter} alt="" className="w-9 h-9" />
                 </div>
-                <div className="w-14 h-14 rounded-full bg-white grid place-items-center shadow-xl perspective">
+                <div className=" w-14 h-14 rounded-full bg-white grid place-items-center shadow-lg perspective">
                   <img src={redux} alt="" className="w-9 h-9" />
                 </div>
-                <div className="w-14 h-14 rounded-full bg-white grid place-items-center shadow-xl perspective">
+                <div className=" w-14 h-14 rounded-full bg-white grid place-items-center shadow-lg perspective">
                   <img src={framer} alt="" className="w-9 h-9" />
                 </div>
-                <div className="w-14 h-14 rounded-full bg-white grid place-items-center shadow-xl perspective">
+                <div className=" w-14 h-14 rounded-full bg-white grid place-items-center shadow-lg perspective">
                   <img src={vite} alt="" className="w-9 h-9" />
                 </div>
 
                 {/* duplicate the icons */}
-                <div className="w-14 h-14 rounded-full bg-white grid place-items-center shadow-xl perspective">
+                <div className="lg:hidden w-14 h-14 rounded-full bg-white grid place-items-center shadow-lg perspective">
                   <img src={html5} alt="" className="w-9 h-9" />
                 </div>
-                <div className="w-14 h-14 rounded-full bg-white grid place-items-center shadow-xl perspective">
+                <div className="lg:hidden w-14 h-14 rounded-full bg-white grid place-items-center shadow-lg perspective">
                   <img src={css} alt="" className="w-9 h-9" />
                 </div>
-                <div className="w-14 h-14 rounded-full bg-white grid place-items-center shadow-xl perspective">
+                <div className="lg:hidden w-14 h-14 rounded-full bg-white grid place-items-center shadow-lg perspective">
                   <img src={javascript} alt="" className="w-9 h-9" />
                 </div>
-                <div className="w-14 h-14 rounded-full bg-white grid place-items-center shadow-xl perspective">
+                <div className="lg:hidden w-14 h-14 rounded-full bg-white grid place-items-center shadow-lg perspective">
                   <img src={scss} alt="" className="w-9 h-9" />
                 </div>
-                <div className="w-14 h-14 rounded-full bg-white grid place-items-center shadow-xl perspective">
+                <div className="lg:hidden w-14 h-14 rounded-full bg-white grid place-items-center shadow-lg perspective">
                   <img src={tailwind} alt="" className="w-9 h-9" />
                 </div>
-                <div className="w-14 h-14 rounded-full bg-white grid place-items-center shadow-xl perspective">
+                <div className="lg:hidden w-14 h-14 rounded-full bg-white grid place-items-center shadow-lg perspective">
                   <img src={git} alt="" className="w-9 h-9" />
                 </div>
-                <div className="w-14 h-14 rounded-full bg-white grid place-items-center shadow-xl perspective">
+                <div className="lg:hidden w-14 h-14 rounded-full bg-white grid place-items-center shadow-lg perspective">
                   <img src={mongodb} alt="" className="w-9 h-9" />
                 </div>
-                <div className="w-14 h-14 rounded-full bg-white grid place-items-center shadow-xl perspective">
+                <div className="lg:hidden w-14 h-14 rounded-full bg-white grid place-items-center shadow-lg perspective">
                   <img src={express} alt="" className="w-9 h-9" />
                 </div>
-                <div className="w-14 h-14 rounded-full bg-white grid place-items-center shadow-xl perspective">
+                <div className="lg:hidden w-14 h-14 rounded-full bg-white grid place-items-center shadow-lg perspective">
                   <img src={nodejs} alt="" className="w-9 h-9" />
                 </div>
-                <div className="w-14 h-14 rounded-full bg-white grid place-items-center shadow-xl perspective">
+                <div className="lg:hidden w-14 h-14 rounded-full bg-white grid place-items-center shadow-lg perspective">
                   <img src={react} alt="" className="w-9 h-9" />
                 </div>
-                <div className="w-14 h-14 rounded-full bg-white grid place-items-center shadow-xl perspective">
+                <div className="lg:hidden w-14 h-14 rounded-full bg-white grid place-items-center shadow-lg perspective">
                   <img src={reactrouter} alt="" className="w-9 h-9" />
                 </div>
-                <div className="w-14 h-14 rounded-full bg-white grid place-items-center shadow-xl perspective">
+                <div className="lg:hidden w-14 h-14 rounded-full bg-white grid place-items-center shadow-lg perspective">
                   <img src={redux} alt="" className="w-9 h-9" />
                 </div>
-                <div className="w-14 h-14 rounded-full bg-white grid place-items-center shadow-xl perspective">
+                <div className="lg:hidden w-14 h-14 rounded-full bg-white grid place-items-center shadow-lg perspective">
                   <img src={framer} alt="" className="w-9 h-9" />
                 </div>
-                <div className="w-14 h-14 rounded-full bg-white grid place-items-center shadow-xl perspective">
+                <div className="lg:hidden w-14 h-14 rounded-full bg-white grid place-items-center shadow-lg perspective">
                   <img src={vite} alt="" className="w-9 h-9" />
                 </div>
               </div>
