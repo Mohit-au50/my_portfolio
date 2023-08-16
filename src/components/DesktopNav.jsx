@@ -14,10 +14,10 @@ const DesktopNav = () => {
         About
       </Link>
       <Link
-        to="/projects"
+        to="/portfolio"
         className="text-gray-500 hover:text-gray-800 transition"
       >
-        Projects
+        Portfolio
       </Link>
       <Link
         to="/contact"

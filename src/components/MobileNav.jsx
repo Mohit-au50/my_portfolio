@@ -50,8 +50,8 @@ const MobileNav = () => {
             </Link>
           </li>
           <li>
-            <Link onClick={handleMenuClose} to="/projects">
-              Projects
+            <Link onClick={handleMenuClose} to="/portfolio">
+              Portfolio
             </Link>
           </li>
           <li>
