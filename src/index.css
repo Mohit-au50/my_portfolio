@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+  .perspective {
+    perspective: 7rem;
+  }
+}
 .section {
   @apply h-screen w-screen;
 }
