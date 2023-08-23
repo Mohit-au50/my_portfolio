@@ -1,30 +1,52 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React, { useState } from "react";
+import { NavHashLink } from "react-router-hash-link";
 
 const DesktopNav = () => {
+  const [home, setHome] = useState(false);
+  const [about, setAbout] = useState(false);
+  const [portfolio, setPortfolio] = useState(false);
+  const [contact, setContact] = useState(false);
   return (
     <nav className="hidden lg:flex gap-x-12 font-semibold">
-      <Link to="/" className="text-gray-500 hover:text-gray-800 transition">
-        Home
-      </Link>
-      <Link
-        to="/about"
-        className="text-gray-500 hover:text-gray-800 transition"
+      <NavHashLink
+        smooth
+        to="#about"
+        onClick={() => {
+          setHome(false);
+          setAbout(true);
+          setPortfolio(false);
+          setContact(false);
+        }}
+        className="text-gray-700 transition px-5"
       >
         About
-      </Link>
-      <Link
-        to="/portfolio"
-        className="text-gray-500 hover:text-gray-800 transition"
+      </NavHashLink>
+      <NavHashLink
+        smooth
+        to="#portfolio"
+        onClick={() => {
+          setHome(false);
+          setAbout(false);
+          setPortfolio(true);
+          setContact(false);
+        }}
+        className="text-gray-700 transition px-5"
       >
         Portfolio
-      </Link>
-      <Link
-        to="/contact"
-        className="text-gray-500 hover:text-gray-800 transition"
+      </NavHashLink>
+      <NavHashLink
+        smooth
+        to="#contact"
+        onClick={() => {
+          setHome(false);
+          setAbout(false);
+          setPortfolio(false);
+          setContact(true);
+        }}
+        className="text-gray-700 transition px-5"
       >
         Contact
-      </Link>
+      </NavHashLink>
     </nav>
   );
 };

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { NavHashLink } from "react-router-hash-link";
 import { motion } from "framer-motion";
 
 import MenuOpen from "../assets/MenuOpen";
@@ -40,24 +40,44 @@ const MobileNav = () => {
         {/* navigation links */}
         <ul className="h-full flex flex-col justify-center items-center gap-y-9 font-bold text-3xl">
           <li>
-            <Link onClick={handleMenuClose} to="/">
+            <NavHashLink
+              smooth
+              to="#home"
+              onClick={handleMenuClose}
+              className={`text-gray-700 transition px-5 pb-4`}
+            >
               Home
-            </Link>
+            </NavHashLink>
           </li>
           <li>
-            <Link onClick={handleMenuClose} to="/about">
+            <NavHashLink
+              smooth
+              to="#about"
+              onClick={handleMenuClose}
+              className={`text-gray-700 transition px-5 pb-4`}
+            >
               About
-            </Link>
+            </NavHashLink>
           </li>
           <li>
-            <Link onClick={handleMenuClose} to="/portfolio">
+            <NavHashLink
+              smooth
+              to="#portfolio"
+              onClick={handleMenuClose}
+              className={`text-gray-700 transition px-5 pb-4`}
+            >
               Portfolio
-            </Link>
+            </NavHashLink>
           </li>
           <li>
-            <Link onClick={handleMenuClose} to="/contact">
+            <NavHashLink
+              smooth
+              to="#contact"
+              onClick={handleMenuClose}
+              className={`text-gray-700 transition px-5 pb-4`}
+            >
               Contact
-            </Link>
+            </NavHashLink>
           </li>
         </ul>
       </motion.div>

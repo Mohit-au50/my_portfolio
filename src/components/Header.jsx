@@ -1,18 +1,17 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { NavHashLink } from "react-router-hash-link";
 import DesktopNav from "./DesktopNav";
 import MobileNav from "./MobileNav";
 import Logo from "../assets/Logo.png";
 
 const Header = () => {
   return (
-    <header className="z-10 w-full h-[5rem] lg:h-[7rem] fixed px-9 lg:px-24 flex items-center">
+    <header className="z-10 w-full h-20 lg:h-24 fixed px-9 lg:px-24 flex items-center">
       <div className="w-full flex lg:flex-row items-center justify-between">
         {/* logo image */}
-        <Link to="/" className="flex gap-2 items-center">
-          <img src={Logo} alt="" className="w-7 lg:w-10 lg:h-10 h-7" />
-          <span className="font-semibold text-lg">Mohit</span>
-        </Link>
+        <NavHashLink smooth to="#home">
+          <img src={Logo} alt="" className="w-7 lg:w-9 lg:h-9 h-7" />
+        </NavHashLink>
 
         {/* Desktop Navigation */}
         <DesktopNav />
