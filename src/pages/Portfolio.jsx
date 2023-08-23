@@ -1,8 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import github from "../assets/github.svg";
-import linkedin from "../assets/linkedin.svg";
-import profile from "../assets/profile.png";
+import link from "../assets/link.svg";
 
 const Projects = [
   {
@@ -77,7 +76,7 @@ const Portfolio = () => {
                       to={project.hostedLink}
                       className="flex gap-2 items-center font-semibold"
                     >
-                      Demo <img src={linkedin} alt="" className="w-7 h-7" />
+                      Demo <img src={link} alt="" className="w-7 h-7" />
                     </Link>
                   </div>
                 </div>
