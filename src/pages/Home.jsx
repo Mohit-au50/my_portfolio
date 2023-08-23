@@ -17,6 +17,7 @@ import redux from "../assets/redux.svg";
 import framer from "../assets/framer.svg";
 import vite from "../assets/vitejs.svg";
 import profile from "../assets/profile.png";
+import CV from "../assets/CV.pdf";
 
 const Home = () => {
   return (
@@ -45,7 +46,9 @@ const Home = () => {
                 Delhi, India.
               </p>
               <button className="bg-black text-white px-7 py-2 rounded my-5 lg:my-7">
-                Download CV
+                <a href={CV} download>
+                  Download CV
+                </a>
               </button>
 
               {/* social icons */}
