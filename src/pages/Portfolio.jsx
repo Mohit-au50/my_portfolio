@@ -37,46 +37,48 @@ const Projects = [
 
 const Portfolio = () => {
   return (
-    <section className="section bg-gray-100">
+    <section className="section" id="portfolio">
       <div className="container h-full mx-auto">
-        <div className="flex flex-col items-center pt-[6rem] pb-9 lg:pt-32 px-5 lg:px-24">
-          <h1 className="text-4xl font-bold my-5 lg:text-7xl">Portfolio</h1>
+        <div className="flex flex-col items-center pt-24 pb-9 lg:pt-32">
+          <span className="font-semibold block my-5">Portfolio</span>
+          <h1 className="text-3xl lg:text-5xl font-bold my-5 text-center lg:text-start break-words">
+            Selected projects
+          </h1>
           {Projects &&
             Projects.map((project, index) => (
               <div
                 key={index}
-                className="flex flex-col lg:flex-row items-center border-2 border-red-500 rounded-lg p-5 my-7"
+                className="w-full flex flex-col items-center bg-white shadow-2xl pb-4 my-12 lg:pb-0 lg:flex-row sm:w-[70%]"
               >
                 <div
-                  className={`bg-green-500 h-[12rem] w-full lg:h-[60vh] lg:basis-2/3 rounded-lg ${
-                    index % 2 !== 0 ? "lg:order-2" : "bg-red-300"
+                  className={`h-56 w-full lg:h-[60vh] lg:basis-2/3
+                  ${
+                    index % 2 == 0
+                      ? "lg:order-2 bg-violet-400"
+                      : "bg-orange-400"
                   }`}
                 >
                   {/* <img src={profile} alt="" className="w-full h-[60vh]" /> */}
                 </div>
 
-                <div className="flex text-center lg:basis-1/2 lg:px-5 lg:py-9">
-                  <div className="px-5">
-                    <h2 className="text-2xl font-bold my-5 lg:text-3xl lg:my-7">
-                      {project.projectName}
-                    </h2>
-                    <p className="font-semibold text-gray-400">
-                      {project.description}
-                    </p>
-                    <div className="flex justify-center gap-x-4 mt-5 lg:mt-7 lg:gap-x-9">
-                      <Link
-                        to={project.githubLink}
-                        className="flex gap-1 items-center text-md font-semibold "
-                      >
-                        Code <img src={github} alt="" className="w-7 h-7" />
-                      </Link>
-                      <Link
-                        to={project.hostedLink}
-                        className="flex gap-1 items-center text-md font-semibold"
-                      >
-                        Demo <img src={linkedin} alt="" className="w-7 h-7" />
-                      </Link>
-                    </div>
+                <div className="flex flex-col text-center px-5 lg:basis-1/2 lg:px-5 lg:py-9">
+                  <h2 className="text-2xl font-bold my-5 lg:text-3xl lg:my-7">
+                    {project.projectName}
+                  </h2>
+                  <p className="text-gray-600 my-5">{project.description}</p>
+                  <div className="flex justify-center gap-x-4 lg:gap-x-9 my-5">
+                    <Link
+                      to={project.githubLink}
+                      className="flex gap-2 items-center font-semibold"
+                    >
+                      Code <img src={github} alt="" className="w-7 h-7" />
+                    </Link>
+                    <Link
+                      to={project.hostedLink}
+                      className="flex gap-2 items-center font-semibold"
+                    >
+                      Demo <img src={linkedin} alt="" className="w-7 h-7" />
+                    </Link>
                   </div>
                 </div>
               </div>
