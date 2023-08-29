@@ -1,5 +1,5 @@
 import React from "react";
-import profile from "../assets/profile.png";
+import profile from "../assets/image.png";
 
 const About = () => {
   return (
@@ -8,8 +8,12 @@ const About = () => {
         <div className="w-full items-center pt-24 lg:w-[72%] lg:mx-auto lg:pt-48">
           <div className="w-full flex flex-col lg:flex-row">
             {/* Image area */}
-            <div className="w-full h-52 bg-orange-400 lg:w-1/3 lg:h-[24rem]">
-              {/* <img src={profile} alt="" className="scale-125 absolute top-20" /> */}
+            <div className="w-full h-52 lg:w-1/3 lg:h-[24rem] overflow-hidden bg-gradient-to-r from-orange-500 to-violet-500">
+              <img
+                src={profile}
+                alt=""
+                className="relative scale-[2.1] top-20 -rotate-6"
+              />
             </div>
 
             {/* text */}
