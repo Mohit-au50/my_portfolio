@@ -70,7 +70,7 @@ const Home = () => {
               Tech Stack
             </h1>
 
-            <div className="relative w-full h-20 grid place-items-center overflow-hidden mt-7 lg:mt-0 lg:h-auto lg:flex-1 lg:pl-12 lg:pr-48 lg:pb-7">
+            <div className="relative w-full h-24 grid place-items-center overflow-hidden mt-7 lg:mt-0 lg:h-auto lg:flex-1 lg:pl-12 lg:pr-48 lg:pb-7">
               <div className="animate-scroll flex gap-x-5 whitespace-nowrap lg:animate-none lg:flex-wrap lg:gap-y-7">
                 <div className=" w-14 h-14 rounded-full bg-white grid place-items-center shadow-lg shadow-orange-400">
                   <img src={html5} alt="" className="w-9 h-9" />
