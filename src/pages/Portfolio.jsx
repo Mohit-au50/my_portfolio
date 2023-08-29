@@ -2,10 +2,15 @@ import React from "react";
 import { Link } from "react-router-dom";
 import github from "../assets/github.svg";
 import link from "../assets/link.svg";
+import clone from "../assets/clone.jpeg";
+import blog from "../assets/blog.jpeg";
+import auth from "../assets/auth.jpeg";
+import crud from "../assets/crud.jpeg";
 
 const Projects = [
   {
     projectName: "Multiuser Blog",
+    image: blog,
     description:
       "Experience the Power of Collaboration: A Multiuser Blog PlatformBuilt with MERN Stack - Share and Discover Unique Perspectives,Engage in Discussions, and Build a Community through Interactive Blogging.",
     githubLink: "",
@@ -13,6 +18,7 @@ const Projects = [
   },
   {
     projectName: "User Auth",
+    image: auth,
     description:
       "Secure Access Made Simple: A User Authentication App Powered by MERN Stack - Safeguard Your Data and Control User Permissions with a Robust and Hassle-Free Authentication Solution.",
     githubLink: "",
@@ -20,6 +26,7 @@ const Projects = [
   },
   {
     projectName: "CRUD App",
+    image: crud,
     description:
       "A crud application website made with MERN Stack for Efficient Data Management. Seamlessly Create, Read, Update, and Delete Data with Ease.",
     githubLink: "",
@@ -27,6 +34,7 @@ const Projects = [
   },
   {
     projectName: "AttainU Clone",
+    image: clone,
     description:
       "With a focus on simplicity and design, created a clone of the AttainU website with the help of Node, Express, MongoDB. Used ejs template engine to render user info dynamically from the database into the website",
     githubLink: "https://github.com/Mohit-au50/backend-project",
@@ -51,13 +59,13 @@ const Portfolio = () => {
               >
                 <div
                   className={`h-56 w-full lg:h-[60vh] lg:basis-2/3
-                  ${
-                    index % 2 == 0
-                      ? "lg:order-2 bg-violet-400"
-                      : "bg-orange-400"
-                  }`}
+                  ${index % 2 == 0 ? "lg:order-2 " : ""}`}
                 >
-                  {/* <img src={profile} alt="" className="w-full h-[60vh]" /> */}
+                  <img
+                    src={project.image}
+                    alt=""
+                    className="w-full h-full object-cover"
+                  />
                 </div>
 
                 <div className="flex flex-col text-center px-5 lg:basis-1/2 lg:px-5 lg:py-9">
