@@ -9,11 +9,11 @@ const About = () => {
           <div className="w-full flex flex-col lg:flex-row">
             {/* Image area */}
             <div className="w-full h-52 lg:w-1/3 lg:h-[24rem] overflow-hidden bg-gradient-to-r from-orange-500 to-violet-500">
-              <img
+            {/* <img
                 src={profile}
                 alt=""
                 className="relative scale-[2.1] top-20 -rotate-6"
-              />
+              /> */}
             </div>
 
             {/* text */}
